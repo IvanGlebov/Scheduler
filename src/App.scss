@@ -1,0 +1,82 @@
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
+.App {
+  text-align: center;
+  display: flex;
+  gap: var(--space);
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --primary-main-color: #8EB8E5;
+  --secondary-main-color: #F15025;
+
+  --space: 16px;
+  --font-base-size: 16px;
+  --font-color: #000000;
+  --font-hover-color: var(--primary-main-color);
+
+}
+
+
+.test-enter {
+  opacity: 0.01;
+  transition: all .3s ease-in;
+}
+
+.test-enter.test-enter-active {
+  opacity: 1;
+  transition: opacity .3s ease-in;
+}
+
+.test-exit {
+  opacity: 1;
+}
+
+.test-exit.test-exit-active {
+  opacity: 0.01;
+  transition: opacity .3s ease-in-out;
+}
+
+* {
+  transition: all 0.3s;
+}

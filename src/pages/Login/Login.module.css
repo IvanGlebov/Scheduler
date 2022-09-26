@@ -1,0 +1,75 @@
+.loginWrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginWrapper > div {
+    width: 40%;
+}
+
+.textFields {
+    display: flex;
+    gap: calc(var(--space) * 2);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.textFields > * {
+    width: 100%;
+    max-width: 400px;
+}
+
+.loginButtonWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space);
+}
+
+.loginButtonWrapper > div:first-child {
+    width: 40%;
+}
+
+.loginButtonWrapper > :first-child {
+    min-width: 150px;
+    height: 56px;
+}
+
+.textField:first-child {
+    width: 100% !important;
+    transition: all .5s;
+}
+.textField > * {
+    transition: all .5s;
+}
+
+.textField.textFieldActive {
+    width: calc(250px - var(--space)) !important;
+    transition: all .3s;
+}
+
+.loginButtonWrapper > * {
+    transition: all .5s;
+}
+
+.loadingButton {
+    height: 56px;
+    width: 150px;
+}
+
+.recoveryButton {
+    height: 56px;
+    width: 150px;
+}
+
+.afterForm {
+    padding-top: var(--space);
+}
+
+
+
+

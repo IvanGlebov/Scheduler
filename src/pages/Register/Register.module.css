@@ -1,0 +1,34 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formWrapper {
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+}
+
+.formElement {
+}
+
+.formElement > * {
+    width: 100%;
+}
+
+.controlsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space);
+}
+
+.controlsContainer > * {
+    height: 56px;
+}

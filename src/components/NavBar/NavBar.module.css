@@ -1,0 +1,14 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: var(--space) calc(var(--space) * 2) 0;
+}
+
+.icon {
+    height: 60px;
+}
+
+.activeLink {
+    color: var(--primary-main-color) !important;
+}
